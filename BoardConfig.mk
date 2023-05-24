@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/10or/G
+DEVICE_PATH := device/10or/holland2
 
 # Architecture
 TARGET_ARCH := arm64
@@ -30,8 +30,8 @@ BOARD_KERNEL_CMDLINE += androidboot.android_dt_dir=/non-existent androidboot.boo
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 BOARD_KERNEL_PAGESIZE :=  2048
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x00000100
-TARGET_KERNEL_CONFIG := lineageos_holland2_defconfig
-TARGET_KERNEL_SOURCE := kernel/10or/G
+TARGET_KERNEL_CONFIG := holland2_defconfig
+TARGET_KERNEL_SOURCE := kernel/10or/holland2
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_VERSION := 4.9
 
@@ -185,4 +185,4 @@ WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit from the proprietary version
-include vendor/10or/G/BoardConfigVendor.mk
+include vendor/10or/holland2/BoardConfigVendor.mk

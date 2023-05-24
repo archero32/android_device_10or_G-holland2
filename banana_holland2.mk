@@ -9,8 +9,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n_mr1.mk)
 
-# Inherit from G device
-$(call inherit-product, device/10or/G/device.mk)
+# Inherit from holland2 device
+$(call inherit-product, device/10or/holland2/device.mk)
 
 # Inherit some common LineageOS stuff
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
@@ -20,9 +20,9 @@ TARGET_BOOT_ANIMATION_RES := 1080
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_BRAND := 10.or
-PRODUCT_DEVICE := G
+PRODUCT_DEVICE := holland2
 PRODUCT_MANUFACTURER := 10.or
-PRODUCT_NAME := lineage_G
+PRODUCT_NAME := lineage_holland2
 PRODUCT_MODEL := 10.or G
 
 PRODUCT_GMS_CLIENTID_BASE := android-huaqin

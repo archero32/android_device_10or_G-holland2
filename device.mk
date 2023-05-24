@@ -386,4 +386,4 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini
 
 # Inherit the proprietary files
-$(call inherit-product, vendor/10or/G/G-vendor.mk)
+$(call inherit-product, vendor/10or/holland2/G-vendor.mk)
