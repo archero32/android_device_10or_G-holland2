@@ -269,6 +269,12 @@ on post-fs-data
     mkdir /data/vendor/netmgr 0770 radio radio
     chmod 0770 /data/vendor/netmgr
 
+    # Smart Charging
+
+    chown system system /sys/class/power_supply/battery/input_suspend
+
+    chmod 0666 /sys/class/power_supply/battery/input_suspend
+    
     #create ipacm log dir
     mkdir /data/vendor/ipa 0770 radio radio
     chmod 0770 /data/vendor/ipa
